@@ -2,7 +2,7 @@
 # yaml-language-server: $schema=https://aka.ms/winget-manifest.defaultLocale.1.10.0.schema.json
 
 PackageIdentifier: ZedIndustries.Zed
-PackageVersion: 0.209.5
+PackageVersion: 0.212.6
 PackageLocale: en-US
 Publisher: Zed Industries
 PublisherUrl: https://zed.dev/
@@ -30,8 +30,11 @@ Tags:
 - developer-tools
 - editor
 - text-editor
-ReleaseNotes: '- Fixed a panic when following ACP agents across buffers. (#40798)'
-ReleaseNotesUrl: https://github.com/zed-industries/zed/releases/tag/v0.209.5
+ReleaseNotes: |-
+  - Fixed Agent Server extensions having the current working directory of the extension rather than the project (#42777)
+  - Fixed an issue where the git panel checkbox was flickering and getting out of sync with file state on disk (#42661)
+  - Trying to open invalid URLs in a browser now shows an error instead of panicking (#42637)
+ReleaseNotesUrl: https://github.com/zed-industries/zed/releases/tag/v0.212.6
 PurchaseUrl: https://zed.dev/pricing
 Documentations:
 - DocumentLabel: Community Links
